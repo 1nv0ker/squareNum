@@ -32,3 +32,4 @@ export async function clearDatas() {
     db.data.test = []
     await db.write()
 }
+// clearDatas()
