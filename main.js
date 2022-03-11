@@ -1,4 +1,4 @@
-import { insertDatas } from './index.js'
+import { insertDatas } from './db.js'
 
 let total = 17540//平方和
 let sqrtNum = parseInt(Math.sqrt(total))+1//平方根
