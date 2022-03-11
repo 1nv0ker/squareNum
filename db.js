@@ -25,3 +25,10 @@ export async function getDatas() {
         resolve(db.data.test)
     })
 }
+
+export async function clearDatas() {
+    await db.read()
+
+    db.data.test = []
+    await db.write()
+}
