@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clear": "node clear.js",
-    "start": "node --trace-warnings main.js"
+    "start": "node main.js",
+    "data": "node data.js"
   },
   "author": "",
   "license": "ISC",
