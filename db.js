@@ -8,7 +8,7 @@ const file = join(__dirname, 'db.json')
 
 const adapter = new JSONFile(file)
 
-const db = new Low(adapter)
+export const db = new Low(adapter)
 
 
 export async function insertDatas(data) {
