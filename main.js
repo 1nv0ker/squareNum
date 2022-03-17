@@ -1,6 +1,6 @@
 import { insertDatas, insertDatas2, insertDatas3 } from './db.js'
 
-let total = 484226//平方和
+let total = 468948669701//平方和
 let sqrtNum = parseInt(Math.sqrt(total))+1//平方根
 let runCount = 0
 let runTime = 1000//总样本量
@@ -36,13 +36,11 @@ async function countSquare() {//
 }
 async function halfRnd() {//当前最优解
     let x = getRndInteger(1, sqrtNum)
-    let y = parseInt(Math.sqrt(total-x*x))
+    let y = Math.sqrt(total-x*x)
     let count = 0
-    while((x*x+y*y) !== total) {
-        
+    while(String(y).indexOf('.') !== -1) {
         x = getRndInteger(1, sqrtNum)
-        y = parseInt(Math.sqrt(total-x*x))
-        
+        y = Math.sqrt(total-x*x)
         count++
     }
     let data = {
